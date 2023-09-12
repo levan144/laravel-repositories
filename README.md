@@ -32,15 +32,18 @@ To automatically bind repositories to their interfaces, make sure you register t
     // ... other providers
     Levan144\LaravelRepositories\Providers\RepositoryServiceProvider::class,
 ]
+```
 
 ## Usage
 
 ### Generate Repositories
 
   To generate a repository and its interface for a specific model, use:
+
   ```bash
   php artisan make:repository ModelName
   ```
+
   Where ModelName is the name of your Eloquent model.
   
   If you wish to generate repositories and interfaces for all models in your application, simply use:
