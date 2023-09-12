@@ -49,7 +49,19 @@ Laravel Repositories is a powerful tool designed to automatically generate repos
   If you encounter any issues or have questions about the usage, please open an issue on the GitHub repository.
  
 
+### License
 
+This software is licensed under the GNU General Public License (GPL). Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+
+1. Redistributions of source code must retain the above copyright notice, this list of conditions, and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions, and the following disclaimer in the documentation and/or other materials provided with the distribution.
+
+3. Any modified versions of this software must be clearly marked as such, and must not be misrepresented as being the original software.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 
 
