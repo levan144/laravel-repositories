@@ -1,0 +1,54 @@
+{
+    "name": "levan144/laravel-repositories",
+    "description": "Generate Repositories and Services based on models",
+    "keywords": [
+        "levan144",
+        "laravel-repositories"
+    ],
+    "homepage": "https://github.com/levan144/laravel-repositories",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Levan Javakhishvili",
+            "email": "levanjavakhishvili.1@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "illuminate/support": "^9.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Levan144\\LaravelRepositories\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Levan144\\LaravelRepositories\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+            "Levan144\\LaravelRepositories\\Providers\\LaravelRepositoriesServiceProvider"
+            ],
+            "aliases": {
+                "LaravelRepositories": "Levan144\\LaravelRepositories\\Facades\\LaravelRepositoriesFacade"
+            }
+        }
+    }
+}
