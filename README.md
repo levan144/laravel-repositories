@@ -22,6 +22,16 @@ Laravel Repositories is a powerful tool designed to automatically generate repos
    Levan144\LaravelRepositories\Providers\LaravelRepositoriesServiceProvider::class,
    ```
    Note: If you're using Laravel 5.5 or higher, this step can be skipped due to package auto-discovery.
+   
+## Setting up Repositories
+
+To automatically bind repositories to their interfaces, make sure you register the `RepositoryServiceProvider` in the `providers` array in your `config/app.php`:
+
+```php
+'providers' => [
+    // ... other providers
+    Levan144\LaravelRepositories\Providers\RepositoryServiceProvider::class,
+]
 
 ## Usage
 
