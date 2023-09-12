@@ -25,14 +25,19 @@ Laravel Repositories is a powerful tool designed to automatically generate repos
    
 ## Setting up Repositories
 
-To automatically bind repositories to their interfaces, make sure you register the `RepositoryServiceProvider` in the `providers` array in your `config/app.php`:
+  If you don't already have a **RepositoryServiceProvider**, you can generate one using the Laravel's artisan command:
+  ```bash
+  php artisan make:provider RepositoryServiceProvider
+  ```
 
-```php
-'providers' => [
-    // ... other providers
-    Levan144\LaravelRepositories\Providers\RepositoryServiceProvider::class,
-]
-```
+  To automatically bind repositories to their interfaces, make sure you register the `RepositoryServiceProvider` in the `providers` array in your `config/app.php`:
+  ```php
+  'providers' => [
+      // ... other providers
+      App\Providers\RepositoryServiceProvider::class,
+  ]
+  ```
+  This will create a new provider in the app/Providers directory.
 
 ## Usage
 
